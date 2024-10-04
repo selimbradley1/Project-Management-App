@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h2>Project Management</h2>
+            <ul>
+                <li><a href="#" data-section="dashboard" class="active">Dashboard</a></li>
+                <li><a href="#" data-section="tasks">Tasks</a></li>
+                <li><a href="#" data-section="issues">Issues</a></li>
+                <li><a href="#" data-section="task-list">Task List</a></li>
+                <li><a href="#" data-section="reports">Reports</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <header>
+                <h1>Project Overview</h1>
+            </header>
+
+            <section id="dashboard" class="section active">
+                <div class="dashboard">
+                    <div class="card">
+                        <h3>Total Tasks</h3>
+                        <p id="total-tasks">0</p>
+                    </div>
+                    <div class="card">
+                        <h3>Completed Tasks</h3>
+                        <p id="completed-tasks">0</p>
+                    </div>
+                    <div class="card">
+                        <h3>Pending Tasks</h3>
+                        <p id="pending-tasks">0</p>
+                    </div>
+                    <div class="card">
+                        <h3>Total Issues</h3>
+                        <p id="total-issues">0</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tasks" class="section">
+                <div class="task-list">
+                    <h2>Task List</h2>
+                    <ul id="task-list"></ul>
+                </div>
+                <form id="add-task-form">
+                    <h2>Add New Task</h2>
+                    <input type="text" id="new-task-input" placeholder="Enter task description" required>
+                    <button type="submit">Add Task</button>
+                </form>
+            </section>
+
+            <section id="issues" class="section">
+                <div class="issue-list">
+                    <h2>Issue List</h2>
+                    <ul id="issue-list"></ul>
+                </div>
+                <form id="add-issue-form">
+                    <h2>Add New Issue</h2>
+                    <input type="text" id="new-issue-input" placeholder="Enter issue description" required>
+                    <button type="submit">Add Issue</button>
+                </form>
+            </section>
+
+            <section id="task-list" class="section">
+                <div class="task-list">
+                    <h2>Comprehensive Task List</h2>
+                    <ul id="comprehensive-task-list"></ul>
+                </div>
+            </section>
+
+            <section id="reports" class="section">
+                <h2>Project Reports</h2>
+                <p>This section will contain various project reports and analytics.</p>
+                <!-- Add more detailed reports here -->
+            </section>
+        </main>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
